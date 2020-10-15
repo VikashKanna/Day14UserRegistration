@@ -33,3 +33,17 @@ else
 fi
         done
 
+Echo "Enter your email Id with Mandatory abc,bl,co And Optional xyz & in"
+while read value3
+        do
+Email="^([a-zA-z1-9]+)\.([abc]+)\.([bl]+)\.([co]+)@([a-z]+)\.([a-z]{2,4})$"
+if [[ $value3 =~ $Email ]]
+then
+        echo true;
+        break
+else
+        echo false input Enter Your Email Id Again;
+
+fi
+done
+
