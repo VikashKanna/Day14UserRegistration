@@ -61,3 +61,20 @@ else
 fi
 done
 
+echo "Enter Your password"
+while read value5
+
+password="^[a-zA-z0-9].{8,}$"
+
+do
+
+if [[ $value5 =~ $password ]]
+then
+        echo true;
+        break
+else
+        echo "false input Minimum 8 Characters required for password";
+        fi
+
+done
+
