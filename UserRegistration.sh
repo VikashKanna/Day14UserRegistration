@@ -47,3 +47,17 @@ else
 fi
 done
 
+echo "Enter your Phone number"
+while read value4
+Number="^([1-9]+)\ ([1-9]+){2,10}"
+        do
+if [[ $value4 =~ $Number ]]
+then
+        echo true;
+        break
+else
+        echo false input Enter Your Phone Number Again;
+
+fi
+done
+
