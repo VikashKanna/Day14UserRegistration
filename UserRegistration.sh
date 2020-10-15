@@ -64,7 +64,7 @@ done
 echo "Enter Your password"
 while read value5
 
-password="^([A-Z]+)([0-9]+)[@#$%^&*]{1}[0-9a-zA-Z\@\#\$\%\^\&\*]{5,20}$"
+password="^[a-zA-z0-9].{8,}$"
 
 do
 
@@ -78,3 +78,7 @@ else
 
 done
 
+echo "Entered Name" = $value1 $value2
+echo "Entered Email Id" = $value3
+echo "Entered Phone Number" = $value4
+echo "Entered Password = Hidden"
