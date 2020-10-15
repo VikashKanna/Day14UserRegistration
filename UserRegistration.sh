@@ -64,7 +64,7 @@ done
 echo "Enter Your password"
 while read value5
 
-password="^[a-zA-z0-9].{8,}$"
+password="^[A-za-z0-9].{8,}$"
 
 do
 
