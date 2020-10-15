@@ -18,3 +18,18 @@ else
         fi
                 done
 
+echo "Enter Your Last Name"
+
+while read value2
+LastName="^[A-Z][A-Za-z]{1,3}$"
+        do
+if [[ $value2 =~ $LastName ]]
+
+then
+        echo true;
+        break
+else
+        echo "False Input,Enter Your LastName Again";
+fi
+        done
+
