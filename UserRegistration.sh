@@ -64,7 +64,7 @@ done
 echo "Enter Your password"
 while read value5
 
-password="^[0-9A-za-z].{8,}$"
+password="^([A-Z]+)([0-9]+)[@#$%^&*]{1}[0-9a-zA-Z\@\#\$\%\^\&\*]{5,20}$"
 
 do
 
@@ -73,7 +73,7 @@ then
         echo true;
         break
 else
-        echo "false input Minimum 8 Characters required for password";
+        echo "false input, Enter your password again";
         fi
 
 done
